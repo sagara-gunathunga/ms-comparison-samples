@@ -9,7 +9,6 @@ Database creation - in-memory H2 database.
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;MVCC=TRUE" />
             <property name="javax.persistence.jdbc.user" value="sa" />
             <property name="javax.persistence.jdbc.password" value="" />
-
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.hbm2ddl.auto" value="create" />
   </properties>
@@ -29,7 +28,6 @@ mysql -u user -p  < db.sql
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/users" />
             <property name="javax.persistence.jdbc.user" value="user" />
             <property name="javax.persistence.jdbc.password" value="password" />
-
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.connection.autocommit" value="true"/>
   </properties>
