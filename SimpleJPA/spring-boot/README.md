@@ -35,7 +35,7 @@ Database creation (MySQL database)
 1. Run db.sql script on db-script directory. 
 ```
 mysql -u user -p  < db.sql
-
+```
 2.  Update the values on application.properties file. 
 ``` 
 spring.datasource.url=jdbc:mysql://localhost:3306/users
