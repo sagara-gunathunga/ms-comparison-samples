@@ -1,0 +1,13 @@
+# For H2 database
+#database:
+#  driverClass: org.h2.Driver
+#  user: sa
+#  password: sa
+#  url: jdbc:h2:./example
+
+# For MySQL database.
+database:
+    driverClass: com.mysql.jdbc.Driver
+    user: root
+    password: root
+    url: jdbc:mysql://localhost:3306/users
