@@ -1,6 +1,6 @@
 # ms-comparison-samples
 
-Database creation - in-memory H2 database. 
+Database creation (In-memory H2 database) 
 ------------------------------------------
  Uncomment following section on src/main/resources/META-INF/persistence.xml file. 
 ```
@@ -16,7 +16,7 @@ Database creation - in-memory H2 database.
 ```
 
 
-Database creation - in-memory H2 database. 
+Database creation (In-memory H2 database) 
 ------------------------------------------
 1. Run db.sql script on db-script directory. 
 ```
