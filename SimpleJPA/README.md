@@ -18,7 +18,7 @@ Database creation (In-memory H2 database)
 ```
 
 
-Database creation (In-memory H2 database) 
+Database creation (MySQL database) 
 ------------------------------------------
 1. Run db.sql script on db-script directory. 
 ```
