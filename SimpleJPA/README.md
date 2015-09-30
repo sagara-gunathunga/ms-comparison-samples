@@ -47,7 +47,7 @@ mvn clean package
 ```
 2. Use following command to run the application 
 ```
-java -jar target/hibernate-sample-1.0.0-SNAPSHOT.jar 
+java -jar target/SimpleJPA-WSO2-Mss-1.0.0-SNAPSHOT.jar 
 ```
 How to test the sample  
 ------------------------------------------
