@@ -19,9 +19,9 @@ Database creation - in-memory H2 database.
 Database creation - in-memory H2 database. 
 ------------------------------------------
 1. Run db.sql script on db-script directory. 
-
+```
 mysql -u user -p  < db.sql
-
+```
 2.  Uncomment following section on src/main/resources/META-INF/persistence.xml file. 
 ``` 
   <properties>
@@ -40,10 +40,34 @@ mysql -u user -p  < db.sql
 How to run the sample  
 ------------------------------------------
 1. Use maven to build the sample 
+```
 mvn clean package 
+```
 2. Use following command to run the application 
-
+```
 java -jar target/hibernate-sample-1.0.0-SNAPSHOT.jar 
+```
+How to test the sample  
+------------------------------------------
+
+Add few users using cURL.  
+```
+curl -v -X POST http://<host-ip>:8080/users/fname/jhon/lname/snow
+
+curl -v -X POST http://<host-ip>:8080/users/fname/peter/lname/crow 
+```
+
+Access above entires from database.
+
+```
+curl -v -X GET http://<host-ip>:8080/users/1
+
+curl -v -X GET http://<host-ip>:8080/users/2
+
+curl -v -X GET http://<host-ip>:8080/users
+```
+
+
 
 
 
