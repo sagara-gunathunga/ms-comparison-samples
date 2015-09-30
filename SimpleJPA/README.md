@@ -1,4 +1,6 @@
-# ms-comparison-samples
+# SimpleJPA samples
+
+
 
 Database creation (In-memory H2 database) 
 ------------------------------------------
