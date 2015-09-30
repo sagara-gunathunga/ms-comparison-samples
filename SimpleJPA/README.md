@@ -3,16 +3,17 @@
 Database creation - in-memory H2 database. 
 ------------------------------------------
  Uncomment following section on src/main/resources/META-INF/persistence.xml file. 
-
+```
  <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;MVCC=TRUE" />
             <property name="javax.persistence.jdbc.user" value="sa" />
             <property name="javax.persistence.jdbc.password" value="" />
+            
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.hbm2ddl.auto" value="create" />
   </properties>
-
+```
 
 
 Database creation - in-memory H2 database. 
@@ -22,16 +23,17 @@ Database creation - in-memory H2 database.
 mysql -u user -p  < db.sql
 
 2.  Uncomment following section on src/main/resources/META-INF/persistence.xml file. 
- 
+``` 
   <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/users" />
             <property name="javax.persistence.jdbc.user" value="user" />
             <property name="javax.persistence.jdbc.password" value="password" />
+            
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.connection.autocommit" value="true"/>
   </properties>
-  
+  ```
   
   
   
