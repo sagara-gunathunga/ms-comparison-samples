@@ -4,7 +4,7 @@
 
 Database creation (In-memory H2 database) 
 ------------------------------------------
- 1. Comment out following section on application.properties file. 
+ 1  Comment out following section on application.properties file. 
 ```
 #spring.datasource.url=jdbc:mysql://localhost:3306/users
 #spring.datasource.username=root
@@ -15,7 +15,7 @@ Database creation (In-memory H2 database)
 #spring.jpa.properties.hibernate.hbm2ddl.auto=none
 #spring.jpa.show-sql=true
 ```
-2. Update pom.xml file by removing MySQL connector and intoducing H2 driver. 
+2  Update pom.xml file by removing MySQL connector and intoducing H2 driver. 
 ```
         <dependency>
             <groupId>com.h2database</groupId>
@@ -28,7 +28,7 @@ Database creation (In-memory H2 database)
         <!--</dependency>--> 
 ```
 
-3. Copy schema.sql file into spring-boot/src/main/resources directory.  
+3  Copy schema.sql file into spring-boot/src/main/resources directory.  
 
 Database creation (MySQL database) 
 ------------------------------------------
